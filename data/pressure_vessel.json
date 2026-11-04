@@ -1,0 +1,1129 @@
+{
+  "initial_design": {
+    "main_length": 1500.0,
+    "main_inner_d": 500.0,
+    "main_wall_thk": 15.0,
+    "nozzle_length": 400.0,
+    "nozzle_inner_d": 150.0,
+    "nozzle_wall_thk": 10.0,
+    "pad_outer_d": 260.0,
+    "pad_thk": 10.0
+  },
+  "best_design": {
+    "main_length": 1500.0,
+    "main_inner_d": 500.0,
+    "main_wall_thk": 21.0,
+    "nozzle_length": 400.0,
+    "nozzle_inner_d": 150.0,
+    "nozzle_wall_thk": 14.0,
+    "pad_outer_d": 260.0,
+    "pad_thk": 12.0
+  },
+  "best_result": {
+    "eval": 21,
+    "design": {
+      "main_length": 1500.0,
+      "main_inner_d": 500.0,
+      "main_wall_thk": 21.0,
+      "nozzle_length": 400.0,
+      "nozzle_inner_d": 150.0,
+      "nozzle_wall_thk": 14.0,
+      "pad_outer_d": 260.0,
+      "pad_thk": 12.0
+    },
+    "volume_mm3": 58005725.870980605,
+    "Smax_MPa": 636.4639677153776,
+    "Smin_MPa": 16.466654760917788,
+    "self_weight_N": 4167.202511934976,
+    "stress_ok": false,
+    "weight_ok": true,
+    "feasible": false,
+    "node_at_Smax": 4,
+    "loaded_area_mm2": 2466856.4951075027,
+    "mesh_volume_mm3": 54113539.56946318,
+    "pressure_resultant_force_vector_N": [
+      8668.3252277635,
+      15205.682774078883,
+      10.433782351793752
+    ],
+    "gravity_resultant_force_vector_N": [
+      0.0,
+      0.0,
+      -4167.202511934976
+    ],
+    "total_resultant_force_vector_N": [
+      8668.3252277635,
+      15205.682774078883,
+      -4156.768729583183
+    ],
+    "design_change_l1": 12.0,
+    "files": {
+      "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\model.step",
+      "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\mesh.msh",
+      "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\model.cdb",
+      "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\stress.png"
+    },
+    "score": 208363521.26497728
+  },
+  "n_evaluations": 23,
+  "history": [
+    {
+      "eval": 0,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 15.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 41032341.648536295,
+      "Smax_MPa": 1343.084666438597,
+      "Smin_MPa": 25.390254860776913,
+      "self_weight_N": 2974.095558329949,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 6266,
+      "loaded_area_mm2": 2466853.797329077,
+      "mesh_volume_mm3": 38620354.354778126,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        20.751387631216176
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2974.095558329949
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        -2953.3441706987333
+      ],
+      "design_change_l1": 0.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_000\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_000\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_000\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_000\\stress.png"
+      },
+      "score": 1352768915.4001408
+    },
+    {
+      "eval": 1,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 12.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 33582054.6705481,
+      "Smax_MPa": 1742.0777512548943,
+      "Smin_MPa": 18.12226142308187,
+      "self_weight_N": 2411.5630152329454,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 14536,
+      "loaded_area_mm2": 2466853.797329077,
+      "mesh_volume_mm3": 31315543.287208006,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        20.751387631216176
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2411.5630152329454
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        -2390.811627601729
+      ],
+      "design_change_l1": 3.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_001\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_001\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_001\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_001\\stress.png"
+      },
+      "score": 2440089312.588563
+    },
+    {
+      "eval": 2,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 48567451.628171414,
+      "Smax_MPa": 870.690879927261,
+      "Smin_MPa": 20.516367940908435,
+      "self_weight_N": 3543.167478616623,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2736,
+      "loaded_area_mm2": 2466852.865445861,
+      "mesh_volume_mm3": 46010083.024817295,
+      "pressure_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        45.708511294266714
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3543.167478616623
+      ],
+      "total_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        -3497.4589673223563
+      ],
+      "design_change_l1": 3.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_002\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_002\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_002\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_002\\stress.png"
+      },
+      "score": 477057434.84217274
+    },
+    {
+      "eval": 3,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 15.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 8.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 40208993.04588348,
+      "Smax_MPa": 1100.2542949001347,
+      "Smin_MPa": 25.736682997948936,
+      "self_weight_N": 2953.7989111398197,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 5634,
+      "loaded_area_mm2": 2466853.797329077,
+      "mesh_volume_mm3": 38356790.62882435,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        20.751387631216176
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2953.7989111398197
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        -2933.0475235086033
+      ],
+      "design_change_l1": 2.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_003\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_003\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_003\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_003\\stress.png"
+      },
+      "score": 846870921.1210551
+    },
+    {
+      "eval": 4,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 15.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 12.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 41875293.7893475,
+      "Smax_MPa": 1336.7344243947798,
+      "Smin_MPa": 26.560094842261186,
+      "self_weight_N": 2994.909269265647,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 6270,
+      "loaded_area_mm2": 2466853.6068234565,
+      "mesh_volume_mm3": 38890632.45311405,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712773,
+        -953.3976047236719,
+        20.751387631219472
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2994.909269265647
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712773,
+        -953.3976047236719,
+        -2974.157881634427
+      ],
+      "design_change_l1": 2.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_004\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_004\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_004\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_004\\stress.png"
+      },
+      "score": 1338037523.529192
+    },
+    {
+      "eval": 5,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 15.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 8.0
+      },
+      "volume_mm3": 40910762.012842365,
+      "Smax_MPa": 1347.1795628139414,
+      "Smin_MPa": 25.802432450519785,
+      "self_weight_N": 2964.7040596651877,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 6266,
+      "loaded_area_mm2": 2466853.797329077,
+      "mesh_volume_mm3": 38498400.302111946,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        20.751387631216176
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2964.7040596651877
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        -2943.952672033972
+      ],
+      "design_change_l1": 2.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_005\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_005\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_005\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_005\\stress.png"
+      },
+      "score": 1362311096.594603
+    },
+    {
+      "eval": 6,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 15.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 41153921.28423022,
+      "Smax_MPa": 1338.9015761251756,
+      "Smin_MPa": 18.711538481444983,
+      "self_weight_N": 2983.3356748001447,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 6266,
+      "loaded_area_mm2": 2466853.797329077,
+      "mesh_volume_mm3": 38740342.62192021,
+      "pressure_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        20.751387631216176
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -2983.3356748001447
+      ],
+      "total_resultant_force_vector_N": [
+        6084.535760712768,
+        -953.3976047237185,
+        -2962.5842871689283
+      ],
+      "design_change_l1": 2.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_006\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_006\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_006\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_006\\stress.png"
+      },
+      "score": 1343055846.5210907
+    },
+    {
+      "eval": 7,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 56187384.609453455,
+      "Smax_MPa": 645.3116580175158,
+      "Smin_MPa": 17.49304997159792,
+      "self_weight_N": 4118.474891912081,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466855.428068615,
+      "mesh_volume_mm3": 53480783.185130686,
+      "pressure_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        10.433782351804325
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4118.474891912081
+      ],
+      "total_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        -4108.041109560277
+      ],
+      "design_change_l1": 6.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_007\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_007\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_007\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_007\\stress.png"
+      },
+      "score": 216519057.68190148
+    },
+    {
+      "eval": 8,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 8.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 47744103.025518596,
+      "Smax_MPa": 874.8503120098566,
+      "Smin_MPa": 16.201493270528093,
+      "self_weight_N": 3523.512464287582,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2736,
+      "loaded_area_mm2": 2466852.865445861,
+      "mesh_volume_mm3": 45754851.27340025,
+      "pressure_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        45.708511294266714
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3523.512464287582
+      ],
+      "total_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        -3477.8039529933153
+      ],
+      "design_change_l1": 5.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_008\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_008\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_008\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_008\\stress.png"
+      },
+      "score": 482820479.7126593
+    },
+    {
+      "eval": 9,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 12.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 49410403.76898262,
+      "Smax_MPa": 997.8060030560227,
+      "Smin_MPa": 24.934409383492834,
+      "self_weight_N": 3563.62256832418,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2740,
+      "loaded_area_mm2": 2466853.932484749,
+      "mesh_volume_mm3": 46275704.218679816,
+      "pressure_resultant_force_vector_N": [
+        3338.9683948462775,
+        378.5139198127837,
+        45.7085112942525
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3563.62256832418
+      ],
+      "total_resultant_force_vector_N": [
+        3338.9683948462775,
+        378.5139198127837,
+        -3517.914057029928
+      ],
+      "design_change_l1": 5.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_009\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_009\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_009\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_009\\stress.png"
+      },
+      "score": 668810222.3570359
+    },
+    {
+      "eval": 10,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 8.0
+      },
+      "volume_mm3": 48445871.992477484,
+      "Smax_MPa": 980.890114940992,
+      "Smin_MPa": 19.194104969205426,
+      "self_weight_N": 3533.9474482068313,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2736,
+      "loaded_area_mm2": 2466852.865445861,
+      "mesh_volume_mm3": 45890355.58681031,
+      "pressure_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        45.708511294266714
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3533.9474482068313
+      ],
+      "total_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        -3488.2389369125644
+      ],
+      "design_change_l1": 5.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_010\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_010\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_010\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_010\\stress.png"
+      },
+      "score": 641428510.2576437
+    },
+    {
+      "eval": 11,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 48689031.26386534,
+      "Smax_MPa": 918.5678781289375,
+      "Smin_MPa": 25.007582134729063,
+      "self_weight_N": 3552.50464801705,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2734,
+      "loaded_area_mm2": 2466853.0559514817,
+      "mesh_volume_mm3": 46131331.58050185,
+      "pressure_resultant_force_vector_N": [
+        3338.968394846281,
+        378.5139198127546,
+        45.70851129425978
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3552.50464801705
+      ],
+      "total_resultant_force_vector_N": [
+        3338.968394846281,
+        378.5139198127546,
+        -3506.79613672279
+      ],
+      "design_change_l1": 5.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_011\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_011\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_011\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_011\\stress.png"
+      },
+      "score": 545486063.2085291
+    },
+    {
+      "eval": 12,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 8.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 55364036.00680064,
+      "Smax_MPa": 655.0830477262276,
+      "Smin_MPa": 17.801219490298074,
+      "self_weight_N": 4099.250290977416,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 690,
+      "loaded_area_mm2": 2466855.428068615,
+      "mesh_volume_mm3": 53231140.60106935,
+      "pressure_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        10.433782351804325
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4099.250290977416
+      ],
+      "total_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        -4088.8165086256113
+      ],
+      "design_change_l1": 8.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_012\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_012\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_012\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_012\\stress.png"
+      },
+      "score": 225708001.64713204
+    },
+    {
+      "eval": 13,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 12.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 57030336.75026466,
+      "Smax_MPa": 641.2111560552686,
+      "Smin_MPa": 16.974882962882443,
+      "self_weight_N": 4138.3303738701325,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466856.4951075027,
+      "mesh_volume_mm3": 53738618.12488445,
+      "pressure_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        10.433782351793752
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4138.3303738701325
+      ],
+      "total_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        -4127.896591518339
+      ],
+      "design_change_l1": 8.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_013\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_013\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_013\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_013\\stress.png"
+      },
+      "score": 212719868.9602112
+    },
+    {
+      "eval": 14,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 8.0
+      },
+      "volume_mm3": 56065804.973759525,
+      "Smax_MPa": 648.3225956856538,
+      "Smin_MPa": 17.52511409438594,
+      "self_weight_N": 4109.123214817108,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466856.4951075027,
+      "mesh_volume_mm3": 53359346.2386249,
+      "pressure_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        10.433782351793752
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4109.123214817108
+      ],
+      "total_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        -4098.689432465315
+      ],
+      "design_change_l1": 8.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_014\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_014\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_014\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_014\\stress.png"
+      },
+      "score": 219330162.91296318
+    },
+    {
+      "eval": 15,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 10.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 56308964.24514738,
+      "Smax_MPa": 643.8825410957023,
+      "Smin_MPa": 15.82354519402167,
+      "self_weight_N": 4127.920116884276,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466855.428068615,
+      "mesh_volume_mm3": 53603434.90503417,
+      "pressure_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        10.433782351804325
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4127.920116884276
+      ],
+      "total_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        -4117.486334532471
+      ],
+      "design_change_l1": 8.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_015\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_015\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_015\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_015\\stress.png"
+      },
+      "score": 215191140.0135228
+    },
+    {
+      "eval": 16,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 14.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 57892892.42923428,
+      "Smax_MPa": 637.9175651613064,
+      "Smin_MPa": 16.430027018123162,
+      "self_weight_N": 4158.453097719701,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466856.4951075027,
+      "mesh_volume_mm3": 53999923.35547027,
+      "pressure_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        10.433782351793752
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4158.453097719701
+      ],
+      "total_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        -4148.019315367907
+      ],
+      "design_change_l1": 10.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_016\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_016\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_016\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_016\\stress.png"
+      },
+      "score": 209692655.13635698
+    },
+    {
+      "eval": 17,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 12.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 8.0
+      },
+      "volume_mm3": 56913079.94606207,
+      "Smax_MPa": 644.2017064842292,
+      "Smin_MPa": 11.426889722978757,
+      "self_weight_N": 4129.353701370414,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466855.428068615,
+      "mesh_volume_mm3": 53622050.830368854,
+      "pressure_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        10.433782351804325
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4129.353701370414
+      ],
+      "total_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        -4118.919919018609
+      ],
+      "design_change_l1": 10.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_017\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_017\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_017\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_017\\stress.png"
+      },
+      "score": 215487353.85657188
+    },
+    {
+      "eval": 18,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 12.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 57147593.554467246,
+      "Smax_MPa": 639.6557368264956,
+      "Smin_MPa": 10.787569609410633,
+      "self_weight_N": 4147.351336543218,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466856.4951075027,
+      "mesh_volume_mm3": 53855760.552968115,
+      "pressure_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        10.433782351793752
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4147.351336543218
+      ],
+      "total_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        -4136.917554191425
+      ],
+      "design_change_l1": 10.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_018\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_018\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_018\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_018\\stress.png"
+      },
+      "score": 211287543.94884512
+    },
+    {
+      "eval": 19,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 14.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 10.0
+      },
+      "volume_mm3": 50272959.44795224,
+      "Smax_MPa": 994.3134817777783,
+      "Smin_MPa": 17.02871356185086,
+      "self_weight_N": 3584.1820473433454,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2740,
+      "loaded_area_mm2": 2466853.932484749,
+      "mesh_volume_mm3": 46542680.9682487,
+      "pressure_resultant_force_vector_N": [
+        3338.9683948462775,
+        378.5139198127837,
+        45.7085112942525
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3584.1820473433454
+      ],
+      "total_resultant_force_vector_N": [
+        3338.9683948462775,
+        378.5139198127837,
+        -3538.473536049093
+      ],
+      "design_change_l1": 7.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_019\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_019\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_019\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_019\\stress.png"
+      },
+      "score": 663110030.9270954
+    },
+    {
+      "eval": 20,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 14.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 8.0
+      },
+      "volume_mm3": 57780058.98748795,
+      "Smax_MPa": 639.8607651722334,
+      "Smin_MPa": 16.292160343047367,
+      "self_weight_N": 4149.84601695361,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466855.428068615,
+      "mesh_volume_mm3": 53888155.42379933,
+      "pressure_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        10.433782351804325
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4149.84601695361
+      ],
+      "total_resultant_force_vector_N": [
+        8668.325227763511,
+        15205.682774078885,
+        -4139.412234601806
+      ],
+      "design_change_l1": 12.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_020\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_020\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_020\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_020\\stress.png"
+      },
+      "score": 211476073.43080896
+    },
+    {
+      "eval": 21,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 21.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 14.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 58005725.870980605,
+      "Smax_MPa": 636.4639677153776,
+      "Smin_MPa": 16.466654760917788,
+      "self_weight_N": 4167.202511934976,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 4,
+      "loaded_area_mm2": 2466856.4951075027,
+      "mesh_volume_mm3": 54113539.56946318,
+      "pressure_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        10.433782351793752
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -4167.202511934976
+      ],
+      "total_resultant_force_vector_N": [
+        8668.3252277635,
+        15205.682774078883,
+        -4156.768729583183
+      ],
+      "design_change_l1": 12.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_021\\stress.png"
+      },
+      "score": 208363521.26497728
+    },
+    {
+      "eval": 22,
+      "design": {
+        "main_length": 1500.0,
+        "main_inner_d": 500.0,
+        "main_wall_thk": 18.0,
+        "nozzle_length": 400.0,
+        "nozzle_inner_d": 150.0,
+        "nozzle_wall_thk": 14.0,
+        "pad_outer_d": 260.0,
+        "pad_thk": 12.0
+      },
+      "volume_mm3": 50385792.889698565,
+      "Smax_MPa": 991.7793162113247,
+      "Smin_MPa": 19.548367338875007,
+      "self_weight_N": 3592.826035348898,
+      "stress_ok": false,
+      "weight_ok": true,
+      "feasible": false,
+      "node_at_Smax": 2738,
+      "loaded_area_mm2": 2466852.865445861,
+      "mesh_volume_mm3": 46654928.1618126,
+      "pressure_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        45.708511294266714
+      ],
+      "gravity_resultant_force_vector_N": [
+        0.0,
+        0.0,
+        -3592.826035348898
+      ],
+      "total_resultant_force_vector_N": [
+        3338.968394846277,
+        378.5139198127862,
+        -3547.1175240546313
+      ],
+      "design_change_l1": 9.0,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_022\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_022\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_022\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\F_NSEL_P_V_VER\\outputs_CROSS_PRESSURE_VESSEL_COORD\\eval_022\\stress.png"
+      },
+      "score": 658989251.2345612
+    }
+  ]
+}

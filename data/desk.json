@@ -1,0 +1,366 @@
+{
+  "best": {
+    "eval": 1,
+    "leg_size_mm": 30.0,
+    "tabletop_thk_mm": 10.0,
+    "volume_mm3": 12444000.0,
+    "Smax_MPa": 4.080676814568404,
+    "Smin_MPa": 0.04538018446012587,
+    "stress_limit_MPa": 5.0,
+    "node_at_Smax": 606,
+    "feasible": true,
+    "n_top": 2916,
+    "f_each": -0.3429355281207133,
+    "files": {
+      "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\model.step",
+      "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\mesh.msh",
+      "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\model.cdb",
+      "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\stress.png"
+    }
+  },
+  "n_evaluations": 18,
+  "history": [
+    {
+      "eval": 0,
+      "leg_size_mm": 30.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 41136000.0,
+      "Smax_MPa": 0.7822385689309639,
+      "Smin_MPa": 0.001286420159793504,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 678,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_000\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_000\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_000\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_000\\stress.png"
+      }
+    },
+    {
+      "eval": 1,
+      "leg_size_mm": 30.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 12444000.0,
+      "Smax_MPa": 4.080676814568404,
+      "Smin_MPa": 0.04538018446012587,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 606,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_001\\stress.png"
+      }
+    },
+    {
+      "eval": 2,
+      "leg_size_mm": 40.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 43264000.0,
+      "Smax_MPa": 0.7475029117109983,
+      "Smin_MPa": 0.0025402942088016706,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 602,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_002\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_002\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_002\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_002\\stress.png"
+      }
+    },
+    {
+      "eval": 3,
+      "leg_size_mm": 40.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 14656000.0,
+      "Smax_MPa": 2.829771755661653,
+      "Smin_MPa": 0.018476243685207294,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 606,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_003\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_003\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_003\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_003\\stress.png"
+      }
+    },
+    {
+      "eval": 4,
+      "leg_size_mm": 50.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 46000000.0,
+      "Smax_MPa": 0.6740522239705509,
+      "Smin_MPa": 0.0022485668043270685,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 895,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_004\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_004\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_004\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_004\\stress.png"
+      }
+    },
+    {
+      "eval": 5,
+      "leg_size_mm": 50.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 17500000.0,
+      "Smax_MPa": 2.6583076316257594,
+      "Smin_MPa": 0.012408140652616435,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 6311,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_005\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_005\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_005\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_005\\stress.png"
+      }
+    },
+    {
+      "eval": 6,
+      "leg_size_mm": 60.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 49344000.0,
+      "Smax_MPa": 0.5561696334358273,
+      "Smin_MPa": 0.0017284055129406731,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 620,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_006\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_006\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_006\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_006\\stress.png"
+      }
+    },
+    {
+      "eval": 7,
+      "leg_size_mm": 60.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 20976000.0,
+      "Smax_MPa": 2.2916611921967602,
+      "Smin_MPa": 0.015480534318550076,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 2070,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_007\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_007\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_007\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_007\\stress.png"
+      }
+    },
+    {
+      "eval": 8,
+      "leg_size_mm": 70.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 53296000.0,
+      "Smax_MPa": 0.5135452038930967,
+      "Smin_MPa": 0.0008808936479450954,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 638,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_008\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_008\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_008\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_008\\stress.png"
+      }
+    },
+    {
+      "eval": 9,
+      "leg_size_mm": 70.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 25084000.0,
+      "Smax_MPa": 2.0719908190401464,
+      "Smin_MPa": 0.01338627688741325,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 1340,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_009\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_009\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_009\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_009\\stress.png"
+      }
+    },
+    {
+      "eval": 10,
+      "leg_size_mm": 32.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 41512960.0,
+      "Smax_MPa": 0.7682796631066895,
+      "Smin_MPa": 0.0022559492889253603,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 602,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_010\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_010\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_010\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_010\\stress.png"
+      }
+    },
+    {
+      "eval": 11,
+      "leg_size_mm": 32.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 12835840.0,
+      "Smax_MPa": 3.716080082169979,
+      "Smin_MPa": 0.04378632418009462,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 967,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_011\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_011\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_011\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_011\\stress.png"
+      }
+    },
+    {
+      "eval": 12,
+      "leg_size_mm": 34.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 41914240.0,
+      "Smax_MPa": 0.715468353434491,
+      "Smin_MPa": 0.0013987485479611615,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 678,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_012\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_012\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_012\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_012\\stress.png"
+      }
+    },
+    {
+      "eval": 13,
+      "leg_size_mm": 34.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 13252960.0,
+      "Smax_MPa": 3.7510714994520673,
+      "Smin_MPa": 0.030663986680148216,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 7003,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_013\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_013\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_013\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_013\\stress.png"
+      }
+    },
+    {
+      "eval": 14,
+      "leg_size_mm": 36.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 42339840.0,
+      "Smax_MPa": 0.7088390766242479,
+      "Smin_MPa": 0.0025672309260798935,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 945,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_014\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_014\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_014\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_014\\stress.png"
+      }
+    },
+    {
+      "eval": 15,
+      "leg_size_mm": 36.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 13695360.0,
+      "Smax_MPa": 3.4249916086743846,
+      "Smin_MPa": 0.03199929237080583,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 887,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_015\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_015\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_015\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_015\\stress.png"
+      }
+    },
+    {
+      "eval": 16,
+      "leg_size_mm": 38.0,
+      "tabletop_thk_mm": 40.0,
+      "volume_mm3": 42789760.0,
+      "Smax_MPa": 0.792503700250048,
+      "Smin_MPa": 0.001804580852099821,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 6829,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_016\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_016\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_016\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_016\\stress.png"
+      }
+    },
+    {
+      "eval": 17,
+      "leg_size_mm": 38.0,
+      "tabletop_thk_mm": 10.0,
+      "volume_mm3": 14163040.0,
+      "Smax_MPa": 2.994157654919847,
+      "Smin_MPa": 0.01499419200418439,
+      "stress_limit_MPa": 5.0,
+      "node_at_Smax": 887,
+      "feasible": true,
+      "n_top": 2916,
+      "f_each": -0.3429355281207133,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_017\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_017\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_017\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_desk\\outputs_DESK_FINAL_NOCLI\\eval_017\\stress.png"
+      }
+    }
+  ]
+}
