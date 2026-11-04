@@ -1,0 +1,205 @@
+{
+  "best": {
+    "eval": 6,
+    "pipe_wall_thk_mm": 8.4375,
+    "pipe_outer_d_mm": 106.875,
+    "pipe_inner_d_mm": 90.0,
+    "volume_mm3": 1707779.82940538,
+    "Smax_MPa": 29.6049395338892,
+    "Smin_MPa": 2.0714923630458473,
+    "stress_limit_MPa": 30.0,
+    "node_at_Smax": 1651,
+    "feasible": true,
+    "pressure_MPa": 5.0,
+    "loaded_area_mm2": 152451.58700409633,
+    "resultant_force_vector_N": [
+      -0.6272939842890388,
+      2.448185586031542,
+      0.0
+    ],
+    "files": {
+      "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\model.step",
+      "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\mesh.msh",
+      "cdb": "",
+      "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\stress.png"
+    }
+  },
+  "n_evaluations": 7,
+  "history": [
+    {
+      "eval": 0,
+      "pipe_wall_thk_mm": 15.0,
+      "pipe_outer_d_mm": 120.0,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 2877133.3840106046,
+      "Smax_MPa": 20.091259305290983,
+      "Smin_MPa": 2.1401861278425685,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 1706,
+      "feasible": true,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_000\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_000\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_000\\stress.png"
+      }
+    },
+    {
+      "eval": 1,
+      "pipe_wall_thk_mm": 5.0,
+      "pipe_outer_d_mm": 100.0,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1149257.4245362182,
+      "Smax_MPa": 48.687245058544384,
+      "Smin_MPa": 2.1875416356217783,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 2140,
+      "feasible": false,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_001\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_001\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_001\\stress.png"
+      }
+    },
+    {
+      "eval": 2,
+      "pipe_wall_thk_mm": 10.0,
+      "pipe_outer_d_mm": 110.0,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1973925.4961035387,
+      "Smax_MPa": 25.704511403187865,
+      "Smin_MPa": 2.07134020052088,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 1582,
+      "feasible": true,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_002\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_002\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_002\\stress.png"
+      }
+    },
+    {
+      "eval": 3,
+      "pipe_wall_thk_mm": 7.5,
+      "pipe_outer_d_mm": 105.0,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1551773.9832774103,
+      "Smax_MPa": 33.102490548381034,
+      "Smin_MPa": 2.2122438149452672,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 2142,
+      "feasible": false,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_003\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_003\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_003\\stress.png"
+      }
+    },
+    {
+      "eval": 4,
+      "pipe_wall_thk_mm": 8.75,
+      "pipe_outer_d_mm": 107.5,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1760395.3704298574,
+      "Smax_MPa": 28.789348290598568,
+      "Smin_MPa": 2.208190680643977,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 1651,
+      "feasible": true,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_004\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_004\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_004\\stress.png"
+      }
+    },
+    {
+      "eval": 5,
+      "pipe_wall_thk_mm": 8.125,
+      "pipe_outer_d_mm": 106.25,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1655471.0845384796,
+      "Smax_MPa": 31.545170796124292,
+      "Smin_MPa": 2.1168816732472915,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 2144,
+      "feasible": false,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_005\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_005\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_005\\stress.png"
+      }
+    },
+    {
+      "eval": 6,
+      "pipe_wall_thk_mm": 8.4375,
+      "pipe_outer_d_mm": 106.875,
+      "pipe_inner_d_mm": 90.0,
+      "volume_mm3": 1707779.82940538,
+      "Smax_MPa": 29.6049395338892,
+      "Smin_MPa": 2.0714923630458473,
+      "stress_limit_MPa": 30.0,
+      "node_at_Smax": 1651,
+      "feasible": true,
+      "pressure_MPa": 5.0,
+      "loaded_area_mm2": 152451.58700409633,
+      "resultant_force_vector_N": [
+        -0.6272939842890388,
+        2.448185586031542,
+        0.0
+      ],
+      "files": {
+        "step": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\model.step",
+        "msh": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\mesh.msh",
+        "cdb": "",
+        "png": "C:\\Users\\ghddb\\Desktop\\MAPDL_A\\mapdl_flan\\outputs_FLANGED_PIPE_CASE1_NOCLI\\eval_006\\stress.png"
+      }
+    }
+  ]
+}
