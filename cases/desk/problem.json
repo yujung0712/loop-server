@@ -1,0 +1,67 @@
+{
+  "case": "DESK_FINAL_NOCLI",
+
+  "geometry_mm": {
+    "tabletop_L": 1200.0,
+    "tabletop_W": 800.0,
+    "total_H": 800.0,
+    "leg_inset_x": 40.0,
+    "leg_inset_y": 40.0
+  },
+
+  "design_var": {
+    "leg_size_mm": {
+      "min": 30.0,
+      "max": 70.0
+    },
+    "tabletop_thk_mm": {
+      "min": 10.0,
+      "max": 40.0
+    }
+  },
+
+  "mesh_mm": {
+    "lc": 20.0
+  },
+
+  "material_MPa": {
+    "E": 10000.0,
+    "nu": 0.30
+  },
+
+  "physical_tags": {
+    "BASE": 101,
+    "TOP": 102,
+    "VOL": 201
+  },
+
+  "load": {
+    "total_N": 1000.0,
+    "direction": "FZ",
+    "sign": -1.0
+  },
+
+  "constraint": {
+    "stress_limit_MPa": 5.0
+  },
+
+  "optimizer": {
+    "coarse_leg_step_mm": 10.0,
+    "fine_leg_step_mm": 2.0,
+    "thk_bisect_tol_mm": 1.0,
+    "max_eval": 120
+  },
+
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_cdb": false,
+    "save_png": true
+  },
+
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_DESK",
+    "jobname_prefix": "desk_final",
+    "override": true
+  }
+}

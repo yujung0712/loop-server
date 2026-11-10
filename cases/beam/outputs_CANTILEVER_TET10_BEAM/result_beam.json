@@ -1,0 +1,69 @@
+{
+  "case_name": "BEAM_UI_PPT_EXAMPLE",
+  "units": {
+    "length": "mm",
+    "force": "N",
+    "stress": "MPa",
+    "E": "MPa"
+  },
+  "geometry_mm": {
+    "beam_length": 1000.0,
+    "beam_width": 50.0,
+    "beam_height": 50.0
+  },
+  "material_MPa": {
+    "E": 200000.0,
+    "nu": 0.3
+  },
+  "load": {
+    "F_tip_total_N": -1000.0,
+    "force_dof": "FZ",
+    "load_nodes": 153,
+    "force_per_load_node_N": -6.5359477124183005
+  },
+  "mesh": {
+    "mesh_nodes": 22219,
+    "mesh_elems": 12910,
+    "build_nodes": 22219,
+    "build_elems": 12910,
+    "element_order": 2,
+    "nnpe": 10,
+    "mesh_time_s": 0.6991872787475586,
+    "input_time_s": 0.8971922397613525,
+    "solve_time_s": 2.5697431564331055
+  },
+  "component_info": {
+    "FIXED": {
+      "requested": 153,
+      "matched": 153,
+      "selected": 153
+    },
+    "LOAD": {
+      "requested": 153,
+      "matched": 153,
+      "selected": 153
+    }
+  },
+  "result_mapdl": {
+    "load_face_UZ_min_mm": -3.1941161992552,
+    "load_face_UZ_avg_mm": -3.19402734085505,
+    "load_face_UZ_max_mm": -3.193980127847805,
+    "fixed_reaction_FZ_sum_N": 1000.0000003938723,
+    "global_max_seqv_MPa": 49.11344973853623
+  },
+  "result_theory_EB": {
+    "I_mm4": 520833.3333333333,
+    "tip_UZ_mm": -3.2,
+    "max_bending_stress_MPa": 48.0
+  },
+  "error": {
+    "tip_UZ_avg_error_percent_vs_EB": 0.18664559827968885,
+    "reaction_error_percent": 3.938722556995344e-08
+  },
+  "files": {
+    "step": "C:\\Users\\ghddb\\Desktop\\projects\\loop-server\\cases\\beam\\outputs_CANTILEVER_TET10_BEAM\\beam.step",
+    "msh": "C:\\Users\\ghddb\\Desktop\\projects\\loop-server\\cases\\beam\\outputs_CANTILEVER_TET10_BEAM\\beam.msh",
+    "png": "C:\\Users\\ghddb\\Desktop\\projects\\loop-server\\cases\\beam\\outputs_CANTILEVER_TET10_BEAM\\seqv.png",
+    "build_inp": "C:\\Temp\\MAPDL_RUN_BEAM\\build_cantilever_beam.inp"
+  }
+}

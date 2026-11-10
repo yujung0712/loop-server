@@ -1,0 +1,35 @@
+{
+  "case_name": "BEAM_UI_PPT_EXAMPLE",
+  "geometry_mm": {
+    "beam_length": 1000.0,
+    "beam_width": 50.0,
+    "beam_height": 50.0
+  },
+  "material_MPa": {
+    "E": 200000.0,
+    "nu": 0.3
+  },
+  "load": {
+    "F_tip_total_N": -1000.0,
+    "force_dof": "FZ"
+  },
+  "mesh_mm": {
+    "lc_global": 10.0,
+    "element_order": 2
+  },
+  "physical_tags": {
+    "FIXED": 101,
+    "LOAD": 102,
+    "VOL": 103
+  },
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_png": true
+  },
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_BEAM",
+    "jobname_prefix": "beam_ui",
+    "override": true
+  }
+}

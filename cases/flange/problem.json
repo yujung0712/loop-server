@@ -1,0 +1,62 @@
+{
+  "case": "FLANGED_PIPE_CASE1_FINAL_NOCLI",
+
+  "geometry_mm": {
+    "length_total": 540.0,
+    "pipe_inner_d": 90.0,
+    "flange_outer_d": 150.0,
+    "flange_inner_d": 90.0,
+    "flange_thk": 20.0,
+    "bolt_hole_d": 14.0,
+    "bolt_circle_d": 125.0,
+    "n_bolt_holes": 8
+  },
+
+  "design_var": {
+    "pipe_wall_thk_mm": {
+      "min": 5.0,
+      "max": 15.0
+    }
+  },
+
+  "mesh_mm": {
+    "lc": 10.0
+  },
+
+  "material_MPa": {
+    "E": 210000.0,
+    "nu": 0.30
+  },
+
+  "physical_tags": {
+    "BASE": 101,
+    "INNER": 102,
+    "VOL": 201
+  },
+
+  "load": {
+    "internal_pressure_MPa": 5.0
+  },
+
+  "constraint": {
+    "stress_limit_MPa": 30.0
+  },
+
+  "optimizer": {
+    "thk_bisect_tol_mm": 0.5,
+    "max_eval": 30
+  },
+
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_cdb": false,
+    "save_png": true
+  },
+
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_FLANGE",
+    "jobname_prefix": "flange_case1",
+    "override": true
+  }
+}
