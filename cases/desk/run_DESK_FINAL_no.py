@@ -395,14 +395,9 @@ def solve_one_eval(mapdl, eval_idx: int, eval_dir: str, gm: dict, cfg: dict):
 
         log("    [MAPDL] CDWRITE done")
 
-    log("    [MAPDL] CLEAR + CDREAD start")
-    mapdl.clear()
-    mapdl.prep7()
-    mapdl.cdread("DB", cdb_work_base, "cdb")
-    mapdl.mp("EX", 1, E)
-    mapdl.mp("PRXY", 1, nu)
-    mapdl.finish()
-    log("    [MAPDL] CLEAR + CDREAD done")
+    # Keep the model already built in memory. CDB is an optional export only.
+    # Never clear/reload here: save_cdb=False means no CDB was written.
+    log("    [MAPDL] using built model directly (no CLEAR/CDREAD)")
 
     log("    [MAPDL] SOLU start")
     mapdl.slashsolu()
@@ -527,9 +522,9 @@ def evaluate_design(mapdl, out_root: str, cfg: dict, eval_idx: int, leg_size: fl
     gm = gmsh_build_extract_desk(eval_dir, cfg, leg_size, tabletop_thk)
     log("[1/3] Gmsh build + extract done")
 
-    log("[2/3] MAPDL build->CDB->CDREAD->solve->post start")
+    log("[2/3] MAPDL build->solve->post start")
     res = solve_one_eval(mapdl, eval_idx, eval_dir, gm, cfg)
-    log("[2/3] MAPDL build->CDB->CDREAD->solve->post done")
+    log("[2/3] MAPDL build->solve->post done")
 
     vol_mm3 = desk_volume_mm3(tabletop_L, tabletop_W, total_H, leg_size, tabletop_thk)
 
@@ -683,12 +678,15 @@ def main():
         "max_eval": max_eval
     }
 
-    log("[MAPDL] single launch start")
+    log("[MAPDL] single launch start (SMP, nproc=1)")
     mapdl = launch_mapdl(
         run_location=run_location,
         jobname=jobname_prefix,
         override=override
     )
+    # Local-only workaround for the known Korean Windows directory-list decoding issue.
+    # mapdl.input below still receives the full path of the local build file.
+    mapdl.list_files = lambda *args, **kwargs: []
     log(f"[MAPDL] launched: workdir = {mapdl.directory}")
 
     best = None

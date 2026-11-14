@@ -1,0 +1,74 @@
+{
+  "case_name": "CROSS_PRESSURE_VESSEL_CASE1",
+
+  "geometry_mm": {
+    "main_length": 1500.0,
+    "main_inner_d": 500.0,
+    "main_wall_thk": 15.0,
+
+    "nozzle_length": 400.0,
+    "nozzle_inner_d": 150.0,
+    "nozzle_wall_thk": 10.0,
+
+    "pad_outer_d": 260.0,
+    "pad_thk": 10.0
+  },
+
+  "design_space_mm": {
+    "main_wall_thk_candidates":   [12.0, 15.0, 18.0, 21.0],
+    "nozzle_wall_thk_candidates": [ 8.0, 10.0, 12.0, 14.0],
+    "pad_thk_candidates":         [ 6.0,  8.0, 10.0, 12.0]
+  },
+
+  "mesh_mm": {
+    "lc": 20.0
+  },
+
+  "physical_tags": {
+    "BASE": 101,
+    "INNER": 102,
+    "VOL": 103
+  },
+
+  "material_MPa": {
+    "E": 200000.0,
+    "nu": 0.30,
+    "density_kg_m3": 7850.0
+  },
+
+  "load": {
+    "internal_pressure_MPa": 5.0,
+    "use_self_weight": true,
+    "gravity_m_s2": 9.81
+  },
+
+  "constraint": {
+    "stress_limit_MPa": 180.0,
+    "self_weight_limit_N": 25000.0
+  },
+
+  "optimizer": {
+    "max_iter": 20,
+    "max_eval": 80,
+
+    "feasible_weight_coeff": 1.0,
+    "feasible_stress_coeff": 0.0,
+    "change_penalty_coeff": 0.02,
+
+    "stress_violation_coeff": 1000.0,
+    "weight_violation_coeff": 0.05
+  },
+
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_cdb": false,
+    "save_png": true
+  },
+
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_PV",
+    "jobname_prefix": "cross_vessel_case1",
+    "override": true
+  }
+}
