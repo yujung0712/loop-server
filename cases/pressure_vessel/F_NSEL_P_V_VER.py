@@ -898,7 +898,13 @@ def evaluate_design(mapdl, out_root: str, cfg: dict, eval_idx: int, design: dict
         _FAIL["n"] = 0
     except Exception as e:
         failed_msg = f"{type(e).__name__}: {str(e)[:300]}"
-        _FAIL["n"] += 1
+                # ANSYS 자체가 꺼진 경우에만 '연속 실패'로 세요 (구속 부족 같은 계산 실패는 그 설계만 불합격 처리해요)
+        ansys_dead = (
+            "MapdlExitedError" in type(e).__name__
+            or "has been exited" in str(e)
+            or "Unable to connect" in str(e)
+        )
+        _FAIL["n"] = _FAIL["n"] + 1 if ansys_dead else 0
         log(f"  [FAIL] 이 설계는 해석에 실패했어요. 불합격으로 처리하고 계속해요: {failed_msg}")
 
         # ANSYS와 Gmsh를 다음 해석에 쓸 수 있게 정리해요
