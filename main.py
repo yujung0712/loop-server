@@ -1,7 +1,9 @@
 import json
+import math
 import os
 import shutil
 import subprocess
+import sys
 import threading
 import time
 from pathlib import Path
@@ -30,9 +32,6 @@ LAST_DIR = BASE_DIR / "last"      # 케이스마다 마지막으로 성공한 �
 # 실행 폴더는 서버 폴더 밖에 둬요 (--reload가 해석 중에 서버를 재시작하지 않게)
 RUNS_DIR = Path("C:/Temp/loop_runs")
 
-# 해석 코드를 돌릴 파이썬 (ANSYS용 도구가 설치된 쪽)
-import sys
-
 
 def _find_solver_python():
     """해석(ANSYS)용 파이썬을 찾아요. 환경변수 LOOP_SOLVER_PYTHON > 내 노트북 경로 > 지금 서버를 돌리는 파이썬 순서예요."""
@@ -51,7 +50,7 @@ def _find_solver_python():
 SOLVER_PYTHON = _find_solver_python()
 
 # 저장된 결과가 있는 케이스
-SAVED_CASES = {"pressure_vessel", "desk", "flange", "beam"}
+SAVED_CASES = {"pressure_vessel", "desk", "flange", "beam", "tsb"}
 
 
 # ---------- 케이스별 입력값 검사 (입력 파일을 덮어쓴 뒤에 실행해요) ----------
@@ -152,6 +151,35 @@ def post_pv(problem):
         )
 
 
+def post_tsb(problem):
+    g = problem["geometry_mm"]
+    dv = problem["design_var"]
+    lc = problem["mesh_mm"]["lc"]
+
+    if dv["min"] >= dv["max"]:
+        raise HTTPException(status_code=400, detail="지름 최소는 최대보다 작아야 해요")
+    if g["L_sq"] >= g["L_total"]:
+        raise HTTPException(status_code=400, detail="사각 구간 길이는 전체 길이보다 짧아야 해요")
+    if dv["min"] < 3 * lc:
+        raise HTTPException(
+            status_code=400,
+            detail=f"지름 최소는 메시 크기({lc} mm)의 3배 이상이어야 해요",
+        )
+    if problem["optimizer"]["tol_mm"] >= dv["max"] - dv["min"]:
+        raise HTTPException(status_code=400, detail="허용오차는 지름 범위보다 작아야 해요")
+
+    # 노드 수 대략 계산 (메시 10 mm 일 때 부피 약 650 mm3 당 노드 1개로 어림해요)
+    volume = g["sq_w"] * g["sq_h"] * g["L_sq"] + math.pi * (dv["max"] / 2) ** 2 * (
+        g["L_total"] - g["L_sq"]
+    )
+    est_nodes = volume / (650.0 * (lc / 10.0) ** 3)
+    if est_nodes > 100000:
+        raise HTTPException(
+            status_code=400,
+            detail=f"메시가 너무 커요 (예상 노드 약 {int(est_nodes):,}개). 메시 크기를 키우거나 지름 최대를 줄여 주세요. 학생용 ANSYS는 노드 수에 제한이 있어요",
+        )
+
+
 # 실제로 해석을 돌릴 수 있는 케이스
 # params: 화면 입력 이름 -> (입력 파일 안의 위치, 최솟값, 최댓값)
 # 최솟값/최댓값은 엉뚱한 입력을 막으려고 임시로 정한 안전 범위예요 (필요하면 바꿔도 돼요)
@@ -243,6 +271,29 @@ RUNNERS = {
             "nozzle_inner_d": (["geometry_mm", "nozzle_inner_d"], 50, 300),
             "pad_outer_d": (["geometry_mm", "pad_outer_d"], 100, 500),
             "pressure_MPa": (["load", "internal_pressure_MPa"], 0.1, 50),
+        },
+    },
+    "tsb": {
+        "script": "run_TSB_FAST_FINAL_no.py",
+        "problem_file": "problem.json",
+        "out_dir": "outputs_TSB_FINAL_NOCLI/final",
+        "result": "summary.json",
+        "image": "deformed.png",
+        "int_keys": {"max_iter"},
+        "post": post_tsb,
+        "params": {
+            "cyl_d_min": (["design_var", "min"], 20, 150),
+            "cyl_d_max": (["design_var", "max"], 20, 200),
+            "u_limit_mm": (["constraint", "U_limit_mm"], 0.01, 100),
+            "tol_mm": (["optimizer", "tol_mm"], 0.01, 10),
+            "max_iter": (["optimizer", "max_iter"], 3, 40),
+            "L_total": (["geometry_mm", "L_total"], 300, 3000),
+            "L_sq": (["geometry_mm", "L_sq"], 100, 2000),
+            "sq_w": (["geometry_mm", "sq_w"], 30, 300),
+            "sq_h": (["geometry_mm", "sq_h"], 30, 300),
+            "load_N": (["load", "total_N"], 100, 10000000),
+            "E_MPa": (["material_MPa", "E"], 1000, 1000000),
+            "lc_mm": (["mesh_mm", "lc"], 6, 30),
         },
     },
 }
@@ -476,15 +527,17 @@ def get_run(run_id: str):
     if r is None:
         raise HTTPException(status_code=404, detail="알 수 없는 실행이에요")
     lines = read_log_lines(r["dir"])
+    # 설계 하나를 시작할 때 찍히는 줄: [EVAL ...] (최적화 코드) 또는 [ITER ...] (TSB)
+    starts = ("[EVAL", "[ITER")
     return {
         "run_id": run_id,
         "case": r["case"],
         "status": run_status(r),
         "params": r["params"],
         "elapsed_s": round(time.time() - r["started"], 1),
-        "evals_started": sum(1 for l in lines if l.startswith("[EVAL")),
+        "evals_started": sum(1 for l in lines if l.startswith(starts)),
         "results": [l for l in lines if l.startswith("[RESULT]")],
-        "eval_lines": [l for l in lines if l.startswith("[EVAL")],
+        "eval_lines": [l for l in lines if l.startswith(starts)],
         "log": lines[-30:],
     }
 

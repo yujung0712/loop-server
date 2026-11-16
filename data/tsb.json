@@ -1,0 +1,242 @@
+{
+  "best": {
+    "iter": 8,
+    "cyl_d_mm": 60.15625,
+    "Uabs_mm": 2.4344469686067796,
+    "Umax_mm": 2.4344469686067796,
+    "Umin_mm": 2.254921310578839,
+    "U_limit_mm": 2.5,
+    "feasible": true,
+    "n_top": 49,
+    "f_each": 2040.8163265306123,
+    "files": {
+      "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\model.step",
+      "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\mesh.msh",
+      "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\model.cdb",
+      "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\deformed.png"
+    }
+  },
+  "history": [
+    {
+      "iter": 0,
+      "cyl_d_mm": 80.0,
+      "Uabs_mm": 1.6300040881527755,
+      "Umax_mm": 1.6300040881527755,
+      "Umin_mm": 1.4387468409918398,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 86,
+      "f_each": 1162.7906976744187,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_000\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_000\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_000\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_000\\deformed.png"
+      }
+    },
+    {
+      "iter": 1,
+      "cyl_d_mm": 60.0,
+      "Uabs_mm": 2.571791786618234,
+      "Umax_mm": 2.571791786618234,
+      "Umin_mm": 2.1419614047690207,
+      "U_limit_mm": 2.5,
+      "feasible": false,
+      "n_top": 48,
+      "f_each": 2083.3333333333335,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_001\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_001\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_001\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_001\\deformed.png"
+      }
+    },
+    {
+      "iter": 2,
+      "cyl_d_mm": 70.0,
+      "Uabs_mm": 1.9227229770035967,
+      "Umax_mm": 1.9227229770035967,
+      "Umin_mm": 1.7899670719284957,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 65,
+      "f_each": 1538.4615384615386,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_002\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_002\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_002\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_002\\deformed.png"
+      }
+    },
+    {
+      "iter": 3,
+      "cyl_d_mm": 65.0,
+      "Uabs_mm": 2.1584872640361406,
+      "Umax_mm": 2.1584872640361406,
+      "Umin_mm": 1.992331261465218,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 61,
+      "f_each": 1639.344262295082,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_003\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_003\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_003\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_003\\deformed.png"
+      }
+    },
+    {
+      "iter": 4,
+      "cyl_d_mm": 62.5,
+      "Uabs_mm": 2.238095643050867,
+      "Umax_mm": 2.238095643050867,
+      "Umin_mm": 2.1486264888170767,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 54,
+      "f_each": 1851.851851851852,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_004\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_004\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_004\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_004\\deformed.png"
+      }
+    },
+    {
+      "iter": 5,
+      "cyl_d_mm": 61.25,
+      "Uabs_mm": 2.425358990910785,
+      "Umax_mm": 2.425358990910785,
+      "Umin_mm": 2.1319150410254566,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 53,
+      "f_each": 1886.7924528301887,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_005\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_005\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_005\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_005\\deformed.png"
+      }
+    },
+    {
+      "iter": 6,
+      "cyl_d_mm": 60.625,
+      "Uabs_mm": 2.387057831102414,
+      "Umax_mm": 2.387057831102414,
+      "Umin_mm": 2.233042231530279,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 57,
+      "f_each": 1754.3859649122808,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_006\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_006\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_006\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_006\\deformed.png"
+      }
+    },
+    {
+      "iter": 7,
+      "cyl_d_mm": 60.3125,
+      "Uabs_mm": 2.399616797383009,
+      "Umax_mm": 2.399616797383009,
+      "Umin_mm": 2.258695645521484,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 51,
+      "f_each": 1960.7843137254902,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_007\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_007\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_007\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_007\\deformed.png"
+      }
+    },
+    {
+      "iter": 8,
+      "cyl_d_mm": 60.15625,
+      "Uabs_mm": 2.4344469686067796,
+      "Umax_mm": 2.4344469686067796,
+      "Umin_mm": 2.254921310578839,
+      "U_limit_mm": 2.5,
+      "feasible": true,
+      "n_top": 49,
+      "f_each": 2040.8163265306123,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_008\\deformed.png"
+      }
+    },
+    {
+      "iter": 9,
+      "cyl_d_mm": 60.078125,
+      "Uabs_mm": 2.538954738054338,
+      "Umax_mm": 2.538954738054338,
+      "Umin_mm": 2.150361712099585,
+      "U_limit_mm": 2.5,
+      "feasible": false,
+      "n_top": 48,
+      "f_each": 2083.3333333333335,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_009\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_009\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_009\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_009\\deformed.png"
+      }
+    },
+    {
+      "iter": 10,
+      "cyl_d_mm": 60.1171875,
+      "Uabs_mm": 2.6311331051878395,
+      "Umax_mm": 2.6311331051878395,
+      "Umin_mm": 2.0605530556526594,
+      "U_limit_mm": 2.5,
+      "feasible": false,
+      "n_top": 49,
+      "f_each": 2040.8163265306123,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_010\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_010\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_010\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_010\\deformed.png"
+      }
+    },
+    {
+      "iter": 11,
+      "cyl_d_mm": 60.13671875,
+      "Uabs_mm": 2.5363293440867785,
+      "Umax_mm": 2.5363293440867785,
+      "Umin_mm": 2.141917465134653,
+      "U_limit_mm": 2.5,
+      "feasible": false,
+      "n_top": 48,
+      "f_each": 2083.3333333333335,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_011\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_011\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_011\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_011\\deformed.png"
+      }
+    },
+    {
+      "iter": 12,
+      "cyl_d_mm": 60.146484375,
+      "Uabs_mm": 2.596122526721759,
+      "Umax_mm": 2.596122526721759,
+      "Umin_mm": 2.090608360887676,
+      "U_limit_mm": 2.5,
+      "feasible": false,
+      "n_top": 49,
+      "f_each": 2040.8163265306123,
+      "files": {
+        "step": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_012\\model.step",
+        "msh": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_012\\mesh.msh",
+        "cdb": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_012\\model.cdb",
+        "png": "C:\\Users\\Kumoh\\OneDrive\\바탕 화면\\mapdl_TSB_1\\outputs_TSB_FINAL_NOCLI\\iter_012\\deformed.png"
+      }
+    }
+  ]
+}

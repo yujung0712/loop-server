@@ -1,0 +1,60 @@
+{
+  "case": "TSB_FINAL_NOCLI",
+
+  "geometry_mm": {
+    "L_total": 1000.0,
+    "L_sq": 500.0,
+    "sq_w": 100.0,
+    "sq_h": 100.0
+  },
+
+  "design_var": {
+    "name": "cyl_d_mm",
+    "min": 40.0,
+    "max": 120.0
+  },
+
+  "mesh_mm": {
+    "lc": 10.0
+  },
+
+  "material_MPa": {
+    "E": 10000.0,
+    "nu": 0.30
+  },
+
+  "physical_tags": {
+    "BASE": 101,
+    "TOP": 102,
+    "VOL": 201
+  },
+
+  "load": {
+    "total_N": 100000.0,
+    "direction": "FZ",
+    "sign": 1.0
+  },
+
+  "constraint": {
+    "U_limit_mm": 2.5,
+    "monitor_component": "Z"
+  },
+
+  "optimizer": {
+    "max_iter": 20,
+    "tol_mm": 0.01
+  },
+
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_cdb": true,
+    "save_png": true
+  },
+
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_TSB",
+    "jobname_prefix": "tsb_final",
+    "override": true
+  }
+}
