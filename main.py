@@ -50,7 +50,7 @@ def _find_solver_python():
 SOLVER_PYTHON = _find_solver_python()
 
 # 저장된 결과가 있는 케이스
-SAVED_CASES = {"pressure_vessel", "desk", "flange", "beam", "tsb"}
+SAVED_CASES = {"pressure_vessel", "desk", "flange", "beam", "tsb", "fatigue"}
 
 
 # ---------- 케이스별 입력값 검사 (입력 파일을 덮어쓴 뒤에 실행해요) ----------
@@ -180,6 +180,48 @@ def post_tsb(problem):
         )
 
 
+def post_fatigue(problem):
+    """피로: 화면에서 받은 최소~최대를 4칸으로 나눠 설계 후보 목록을 만들어요."""
+    t = problem.pop("_in", None)  # 임시로 받아 둔 입력값
+    g = problem["geometry_mm"]
+    space = problem["design_space_mm"]
+
+    if t:
+        for label, lo_key, hi_key, space_key, geom_key in (
+            ("판 폭", "plate_width_min", "plate_width_max", "plate_width_candidates", "plate_width"),
+            ("판 두께", "plate_thk_min", "plate_thk_max", "plate_thk_candidates", "plate_thk"),
+            ("구멍 지름", "hole_d_min", "hole_d_max", "hole_d_candidates", "hole_d"),
+        ):
+            lo = t.get(lo_key)
+            hi = t.get(hi_key)
+            if lo is None or hi is None:
+                continue
+            if lo >= hi:
+                raise HTTPException(status_code=400, detail=f"{label} 최소는 최대보다 작아야 해요")
+            cands = [round(lo + (hi - lo) * i / 3, 3) for i in range(4)]
+            space[space_key] = cands
+            g[geom_key] = cands[1]  # 시작 설계는 후보 목록 안에 있어야 해요 (두 번째 칸)
+
+    if g["hole_d"] >= 0.8 * g["plate_width"]:
+        raise HTTPException(
+            status_code=400,
+            detail="시작 설계의 구멍 지름이 판 폭의 80% 이상이에요. 구멍 지름 범위를 줄이거나 판 폭 범위를 키워 주세요",
+        )
+
+    m = problem["mesh_mm"]
+    if m["lc_hole"] > m["lc_global"]:
+        raise HTTPException(status_code=400, detail="구멍 주변 메시 크기는 전체 메시 크기보다 작거나 같아야 해요")
+
+    # 노드 수 대략 계산 (판 300x160x14, 메시 8/3 mm 일 때 약 4만 개로 어림해요. 구멍 주변은 빼고 계산한 값이에요)
+    volume = g["plate_length"] * max(space["plate_width_candidates"]) * max(space["plate_thk_candidates"])
+    est_nodes = 21705 * (volume / 360000.0) * (8.0 / m["lc_global"]) ** 3
+    if est_nodes > 70000:
+        raise HTTPException(
+            status_code=400,
+            detail=f"메시가 너무 커요 (예상 노드 약 {int(est_nodes):,}개). 메시 크기를 키우거나 판 크기를 줄여 주세요. 학생용 ANSYS는 노드 수에 제한이 있어요",
+        )
+
+
 # 실제로 해석을 돌릴 수 있는 케이스
 # params: 화면 입력 이름 -> (입력 파일 안의 위치, 최솟값, 최댓값)
 # 최솟값/최댓값은 엉뚱한 입력을 막으려고 임시로 정한 안전 범위예요 (필요하면 바꿔도 돼요)
@@ -296,6 +338,34 @@ RUNNERS = {
             "lc_mm": (["mesh_mm", "lc"], 6, 30),
         },
     },
+    "fatigue": {
+        "script": "fatigue_2_sn_table.py",
+        "problem_file": "problem.json",
+        "out_dir": "outputs_PLATE_WITH_HOLE_FATIGUE_CASE1/final",
+        "result": "summary.json",
+        "image": "stress_max.png",
+        "int_keys": {"max_eval"},
+        "post": post_fatigue,
+        "params": {
+            # 설계 변수: 최소~최대를 입력받아 post_fatigue가 4칸 후보로 나눠요 ("_in"은 임시 보관함)
+            "plate_width_min": (["_in", "plate_width_min"], 60, 400),
+            "plate_width_max": (["_in", "plate_width_max"], 60, 400),
+            "plate_thk_min": (["_in", "plate_thk_min"], 3, 60),
+            "plate_thk_max": (["_in", "plate_thk_max"], 3, 60),
+            "hole_d_min": (["_in", "hole_d_min"], 4, 200),
+            "hole_d_max": (["_in", "hole_d_max"], 4, 200),
+            "min_life_cycles": (["constraint", "min_life_cycles"], 1000, 1000000000),
+            "max_mass_kg": (["constraint", "max_mass_kg"], 0.1, 100),
+            # 이 코드는 해석 횟수가 이 값에 닿으면 결과 없이 에러로 끝나서 넉넉하게 둬야 해요
+            "max_eval": (["optimizer", "max_eval"], 20, 200),
+            "plate_length": (["geometry_mm", "plate_length"], 100, 1000),
+            "ux_max_mm": (["fatigue", "ux_max_mm"], 0.01, 2),
+            "E_MPa": (["material_MPa", "E"], 1000, 1000000),
+            "Su_MPa": (["material_MPa", "Su"], 100, 3000),
+            "lc_global_mm": (["mesh_mm", "lc_global"], 6, 30),
+            "lc_hole_mm": (["mesh_mm", "lc_hole"], 2, 15),
+        },
+    },
 }
 
 RUNS = {}  # run_id -> 실행 정보 (서버를 끄면 사라져요)
@@ -359,6 +429,7 @@ def finalize_run(run_id: str):
     if r is None:
         return
     r["proc"].wait()
+    r["ended"] = time.time()
     time.sleep(1)
     if run_status(r) == "done":
         save_last(run_id, r)
@@ -534,7 +605,7 @@ def get_run(run_id: str):
         "case": r["case"],
         "status": run_status(r),
         "params": r["params"],
-        "elapsed_s": round(time.time() - r["started"], 1),
+        "elapsed_s": round(r.get("ended", time.time()) - r["started"], 1),
         "evals_started": sum(1 for l in lines if l.startswith(starts)),
         "results": [l for l in lines if l.startswith("[RESULT]")],
         "eval_lines": [l for l in lines if l.startswith(starts)],

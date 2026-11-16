@@ -1,0 +1,82 @@
+{
+  "case_name": "PLATE_WITH_HOLE_FATIGUE_CASE1",
+
+  "geometry_mm": {
+    "plate_length": 300.0,
+    "plate_width": 120.0,
+    "plate_thk": 10.0,
+    "hole_d": 20.0
+  },
+
+  "design_space_mm": {
+    "plate_width_candidates": [100.0, 120.0, 140.0, 160.0],
+    "plate_thk_candidates": [8.0, 10.0, 12.0, 14.0],
+    "hole_d_candidates": [16.0, 20.0, 24.0, 28.0]
+  },
+
+  "mesh_mm": {
+    "lc_global": 8.0,
+    "lc_hole": 3.0,
+    "element_order": 2
+  },
+
+  "physical_tags": {
+    "FIXED": 101,
+    "LOAD": 102,
+    "HOTSPOT": 103,
+    "VOL": 104
+  },
+
+  "material_MPa": {
+    "E": 200000.0,
+    "nu": 0.30,
+    "density_kg_m3": 7850.0,
+    "Su": 600.0
+  },
+
+  "fatigue": {
+    "ux_max_mm": 0.15,
+    "ux_min_mm": 0.00,
+    "mean_stress_correction": "Goodman",
+
+    "life_method": "sn_curve",
+    "sn_curve": {
+      "stress_type": "amplitude",
+      "mean_stress_Pa": 0.0,
+      "cycles": [1000.0, 10000.0, 100000.0, 1000000.0, 10000000.0, 100000000.0],
+      "stress_MPa": [454.1, 369.1, 300.02, 243.87, 198.22, 161.12]
+    },
+
+    "basquin_sigma_f_prime_MPa": 900.0,
+    "basquin_b": -0.09
+  },
+
+  "constraint": {
+    "min_life_cycles": 1000000.0,
+    "max_mass_kg": 5.0
+  },
+
+  "optimizer": {
+    "max_iter": 20,
+    "max_eval": 80,
+
+    "feasible_mass_coeff": 1.0,
+    "feasible_life_coeff": -1.0e-6,
+    "change_penalty_coeff": 0.02,
+
+    "life_violation_coeff": 1.0e-10,
+    "mass_violation_coeff": 100.0
+  },
+
+  "outputs": {
+    "save_step": true,
+    "save_msh": true,
+    "save_png": true
+  },
+
+  "mapdl": {
+    "run_location": "C:/Temp/MAPDL_RUN_FATIGUE",
+    "jobname_prefix": "plate_fatigue_case1",
+    "override": true
+  }
+}
